@@ -10,7 +10,7 @@ def index(request):
 def predict(request):
     return render(request, 'predict.html')
 def Results(request):
-    data = pd.read_csv(r"https://github.com/Niiamoododoo/Diabetes-Prediction-Website/blob/main/Diabetes_2_dataset.csv")
+    data = pd.read_csv(r"https://github.com/Niiamoododoo/sitefordiabetesprediction/blob/main/diabetesprediction/Diabetes_2_dataset.csv")
 
     X = data.drop("Outcome", axis=1)
     Y = data["Outcome"]
